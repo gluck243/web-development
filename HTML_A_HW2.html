@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="/action-page.php">
+           <fieldset style="width:25%">
+               <legend>Contact information:</legend>
+            <input type="text" id="fname" name="fname" placeholder="First name"> <br> <br>
+            <input type="text" id="sname" name="sname" placeholder="Second name"> <br> <br>
+            <input type="email" id="email" name="email" placeholder="Email"> <br> <br>
+            <input type="tel" id="tel" name="tel" placeholder="Telephone number"> <br> <br>
+           <label for="checkbox">Prefered contact method</label> <br>
+           <input type="checkbox" id="method1" name="method1">
+           <label for="method1">Email</label> <br>
+           <input type="checkbox" id="method2" name="method2">
+           <label for="method2">Telephone number</label>
+           </fieldset>
+           <fieldset style="width:25%">
+                <legend>Feedback:</legend>
+                <input type="message" id="message" name="message" placeholder="Message subject"> <br> <br>
+                <textarea name="message" rows="15" cols="50"></textarea>
+                <input type="file"> 
+                <input type="submit" value="Send">
+           </fieldset>
+    </form>
+    <h6>Made by Anton Ivanov</h6>
+</body>
+</html>

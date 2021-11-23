@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidebar a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidebar a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidebar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        .openbtn {
+          font-size: 20px;
+          cursor: pointer;
+          background-color: #111;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+        }
+        
+        .openbtn:hover {
+          background-color: #444;
+        }
+        
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidebar {padding-top: 15px;}
+          .sidebar a {font-size: 18px;}
+        }
+        </style>
+        <style>* {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial;
+        }
+        
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+        
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+        
+        .column {
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+        
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+        }
+        
+        @media (max-width: 800px) {
+          .column {
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+        
+        @media (max-width: 600px) {
+          .column {
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+        </style>
+        </head>
+        <body>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="#">Homepage</a>
+          <a href="#">CV</a>
+          <a href="HTML_A_Photo_Gallery_Flexbox.html">Photo Gallery (Made using Flexbox)</a>
+          <a href="#">HTML and Phyton projects</a>
+          <a href="#">Google maps</a>
+          <a href="file:///C:/Users/gluck/Desktop/LAB/dev/Web-development/web-development/HTML/HTML_A_HW3.html">Feedback</a>
+        </div>
+        
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+        </div>
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+<div class="header">
+  <h1>Photo (and art) gallery of Space (until I find good photos of myself)</h1>
+  <p>Here you can see beautiful pictures of Space!</p>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="https://sun9-62.userapi.com/impg/EO0Cel7ofsQjBumr1k6WBHMgXqwbaVQ4irVsyQ/DBNQrnuxLlU.jpg?size=2160x2160&quality=96&sign=f178c3c69877a55d7cd8f6b60a5a5911" style="width:100%">
+    <img src="https://sun9-44.userapi.com/impg/ZU3uqj3hLRZBawt9W1TOXCAJt7iv59QerAxf_A/4wDrhJaz7PY.jpg?size=1280x785&quality=96&sign=099ee53cf94556c336425a96123890c2&type=album" style="width:100%">
+    <img src="https://sun9-70.userapi.com/impg/hdSfBMvo7R2WcVR114HFmSPB2F7wlgHTWxVAgA/kZ6oLp0y59A.jpg?size=1280x794&quality=96&sign=0b8afca128017d1f71440b31e2dc3559&type=album" style="width:100%">
+    <img src="https://sun9-13.userapi.com/impg/bBudm1uwyax65XMhpoYBwnp0pMZcBNegVxFnOQ/UIkpsZaoIuk.jpg?size=1920x1200&quality=96&sign=597d977bc3695e3da8283c4add18130d&type=album" style="width:100%">
+    <img src="https://sun9-14.userapi.com/impg/86IUhlHrYLhwnD-H4e0jAc6htC0et6_tau2mXQ/7hgxPXTbY50.jpg?size=1200x900&quality=96&sign=0d208e4f71363cffb09cf3eb2c521fd1&type=album" style="width:100%">
+  </div> 
+  <div class="column">
+    <img src="https://sun9-76.userapi.com/impg/TKYfRxXkxVf87INm_jskDjJYr3KGQN8imQxH7A/MXDPAtUxBZc.jpg?size=750x1000&quality=96&sign=5a92dcda456f3424a6fe86e433c02e99&type=album" style="width:100%">
+    <img src="https://sun9-60.userapi.com/impg/gr-Y2SrDwinWA_HCPxPvlsHDMNtLT_vwCi13AA/kFiPt2KnOgM.jpg?size=1920x1080&quality=96&sign=0a6f13280a631428275467f35faf301e&type=album" style="width:100%">
+    <img src="https://sun9-77.userapi.com/impg/6vIc4PdmsAsAAb8tvkJzBbcVTYg2GwUCbJtN6Q/qAVOBy1jMzc.jpg?size=1920x1080&quality=96&sign=079ef98141fbf05c27515b0752b635a7&type=album" style="width:100%">
+    <img src="https://sun9-69.userapi.com/impg/o-s-HOrttYaz4w4ah4hx4TKC00vDVNHelb6kDg/A-Y4d6XBPrI.jpg?size=1920x1080&quality=96&sign=be1359ea6d6e9212ce5e24267ada5d2d&type=album" style="width:100%">
+    <img src="https://sun9-84.userapi.com/impg/3x8yLo2oF0TNd6VsNEBfPsHvzDLER9dxyP1oWA/a5R_jYqPgwk.jpg?size=1079x1080&quality=96&sign=7ee5aa305cf4c9593b9f8c096ecc825f&type=album" style="width:100%">
+  </div> 
+  <div class="column">
+    <img src="https://sun9-85.userapi.com/impg/JOMWBUp8mD6CmHBmzsgjrhP-LN4qgrGWbFQQMQ/tna1cWGiax4.jpg?size=1920x1080&quality=96&sign=6ab78cc8e0b514634ad5451a37f965f4&type=album" style="width:100%">
+    <img src="https://sun9-61.userapi.com/impg/Lx-CG2FxAhDPkjhKU3q08Y0KasqtuTOv4cLeAA/PDA70fmcomk.jpg?size=1144x2160&quality=96&sign=b2943664744bba8f7a6328e8cdb931eb&type=album" style="width:100%">
+    <img src="https://sun9-76.userapi.com/impg/9WRdmvRyb1mGDMOL3smb6EaBO8LNz_p8_o8hIw/KlKgC6mkxrI.jpg?size=1920x1200&quality=96&sign=11030ab64ee26c2ffc23470f4b8d8e3d&type=album" style="width:100%">
+    <img src="https://sun9-48.userapi.com/impg/ViLBkAt7GWlTzEFL2IMpTWbzMOqwF7JcNYaJeg/Fr3Xk-cEHnw.jpg?size=1280x651&quality=96&sign=b4919cf6753d204403eaf4058f9275ae&type=album" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://sun9-55.userapi.com/impg/5SeB1a06ITaUVR1XhKxcmpf3h4-jQOnap49IZg/PNtKrsFBzD8.jpg?size=1293x1824&quality=96&sign=4d7c8973f9790c3d1d5289757d93bc80&type=album" style="width:100%">
+    <img src="https://sun9-20.userapi.com/impg/zWLQ-4a2sp_1z0syztiu5R3zkNxHDFuGdQrilg/Pf4xX8LAx8E.jpg?size=1200x900&quality=96&sign=561c58edae1113594ad54118e07abb6c&type=album" style="width:100%">
+    <img src="https://sun9-55.userapi.com/impg/WiuQ_m-DJ7rjT97cjBDHEItsZDiKcpRzwY8HWA/h7MZ5UYuss4.jpg?size=900x675&quality=96&sign=91fb3b711de604e07b5d79eb6ac5c111&type=album" style="width:100%">
+    <img src="https://sun9-61.userapi.com/impg/dAo_ebA30qyvpO5ql75DWjrB2l_x2_-S659tGQ/vaOobyuTqzc.jpg?size=1920x1152&quality=96&sign=abe312ad27c4273c44180ed38f4e5cfd&type=album" style="width:100%">
+    <img src="https://sun9-43.userapi.com/impg/o8SrOCOJj6HgrHWTrW4tzOM5szeIpibqLg4b4A/yjOxFWZTLHg.jpg?size=551x541&quality=96&sign=f1f17838a08afc854cc0e1a3b214082b&type=album" style="width:100%">
+  </div> 
+</div>
+</body>
+</html> 
+        

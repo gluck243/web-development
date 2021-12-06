@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="../JAVA SCRIPT/calculator.js"></script>
+    <title>Task Calculators</title>
+</head>
+<body>
+    <h2>Calculators - Task 1</h2>
+    <input type="text" id="number1" size="10" placeholder="Type number">
+
+    <select id="operator1">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <input type="text" id="number2" size="10" placeholder="Type number">
+
+    <button type="button" onclick="getValuesFromCalculator1()" id="equal">=</button>
+    <p id="result">Press "=" to get answer</p>
+
+    <h2>Calculators - Task 2</h2>
+    <input type="text" id="number5" size="10" placeholder="Type number">
+
+    <form id="selection">
+        <input type="radio" name="sel" value="+">
+        <label for="add">Addition</label><br>
+        <input type="radio" name="sel" value="-">
+        <label for="sub">Substraction</label><br>
+        <input type="radio" name="sel" value="*">
+        <label for="mul">Multiplication</label><br>
+        <input type="radio" name="sel" value="/">
+        <label for="div">Division</label>
+    </form>
+
+    <input type="text" id="number6" size="10" placeholder="Type number">
+    <button type="button" onclick="getValuesFromCalculator3()" id="equal3">=</button>
+    <p id="result3">Press "=" to get answer</p>
+
+    <h2>Calculators - Task 3</h2>
+    <button type="button" onclick="Increase1()"><img src="https://e7.pngegg.com/pngimages/125/927/png-clipart-computer-icons-up-arrow-miscellaneous-angle.png" height="10" width="10"></src></button>
+    <input type="text" id="number3" size="10" placeholder="Type number">
+    <button type="button" onclick="Decrease1()"><img src="https://e7.pngegg.com/pngimages/380/403/png-clipart-arrow-computer-icons-arrow-angle-rectangle.png" height="10" width="10"></src></button>
+
+    <select id="operator2">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <button type="button" onclick="Increase2()"><img src="https://e7.pngegg.com/pngimages/125/927/png-clipart-computer-icons-up-arrow-miscellaneous-angle.png" height="10" width="10"></src></button>
+    <input type="text" id="number4" size="10" placeholder="Type number">
+    <button type="button" onclick="Decrease2()"><img src="https://e7.pngegg.com/pngimages/380/403/png-clipart-arrow-computer-icons-arrow-angle-rectangle.png" height="10" width="10"></src></button>
+
+    <button type="button" onclick="getValuesFromCalculator2()" id="equal2">=</button>
+    <p id="result2">Press "=" to get answer</p>
+</body>
+</html>
